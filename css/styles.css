@@ -526,30 +526,30 @@ margin-bottom: 8px;
 
  /* Section Images */
 
-.img-section {
+/* .img-section {
     padding-bottom: 120px;
-} 
+}  */
 
- .work-title {
+ /* .work-title {
     margin: 0 auto;
 font-size: 36px;
 line-height: 1.1;
 text-transform: capitalize;
 color: var(--title-text-color);
 margin-bottom: 72px;
-}
-.work-list {
+} */
+/* .work-list {
     display: flex;
     flex-wrap: wrap;
     list-style: none ;
-   }
+   } */
  
 
-.work-list >.item {
+/* .work-list >.item {
        width: 360px;
     margin-left:  var(--card-gap);
     flex-basis:calc(100% / 3 - var(--card-gap ));
-}  */
+}  */ */
 
  .team {
     background-color: #F4F4FD;
@@ -637,30 +637,36 @@ margin-bottom: 72px;
     width: 16px;
     height: 16px;
 }
-
+.our-team-title no bg{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    margin-bottom: 72px;
+    } 
 
 .customers-list{
-    list-style: none;
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.customers-item:not(:last-child){
-    margin-right: 24px;
+.customers-item {
+    width: 168px;
+    height: 88px;
 }
 
 .customers-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
-    height: 88px;
+    width: 100%;
+    height: 100%;
     color: #8E8F99;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-
-    transition-property: color, border;
+    outline: none;
+    transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -669,17 +675,19 @@ margin-bottom: 72px;
 }
 
 .customers-link:hover,
-.customers-link:focus{
-    color: #4D5AE5;
-    border: 1px solid #4D5AE5;
+.customers-link:focus,
+.customers-link:active {
+    color: #404BBF;
+    border-color: 1px solid #404BBF;
 }
 
 .customers-icon{
-    display: block;
+    /* display: block;
     width: 104px;
-    height: 56px;
+    height: 56px; */
+    pointer-events: none;
     fill: currentColor;
-} */
+}
 
 
 /* Footer */
@@ -1159,7 +1167,48 @@ padding: 24px 16px;
 .feature-list.item:not(:last-child){
     margin-bottom: 72px;
 }
+.team section.team-list {
+    padding-bottom: 128px;
+}
 
+
+.team-list .team-item {
+    margin: 0 auto;
+}
+
+.team-list .team-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+
+/* ===========CUSTOMERS MOBILE ================== */
+
+
+.customer-list {
+    flex-basis: calc((100% - 16px) / 2);
+    gap: 72px 16px;
+}
+
+
+/* ================ FOOTER MOBILE ================= */
+
+.footer .container {
+    justify-content: center;
+    text-align: center;
+}
+
+.email-input-footer {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.footer-summary {
+    margin-bottom: 72px;
+}
+
+.footer-social {
+    margin-bottom: 72px;
+}
 
 }
 /* Footer
