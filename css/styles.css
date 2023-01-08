@@ -385,7 +385,7 @@ border-radius: 2px;
     list-style: none;
     text-decoration: none;
     }
-.site-nav .item:not(:last-child) {
+.site-nav-item:not(:last-child):not(:last-child) {
     margin-right: 40px;
     text-decoration: none;
 }
@@ -418,7 +418,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus {
-color: var(--primary-text-color);
+color: var(--accent-color);
 }  
  
 /* --section HERO-- */
@@ -483,26 +483,26 @@ color: var(--primary-text-color);
 margin-bottom: 8px;
 } 
 
- .feature-list {
+ /* .feature-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left:calc(-1*var(--card-gap));
-}
-.list-title {
+} */
+/* .list-title {
     margin-bottom: 8px;
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
 
-    }
+    } */
 
-.feature-list>.item {
+/* .feature-list>.item {
     flex-basis: calc(100%/4 - var(--card-gap));
    margin-left:var(--card-gap);
    background-size:  64px 64px;
-   }
+   } */
     .description {
         font-size: 16px;
         line-height: 1.5;
@@ -511,18 +511,18 @@ margin-bottom: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 264px;
+    
     height: 112px;
     background: var(--secondary-bg-color);
     border-radius: 4px;
     margin-bottom: 8px;
 
  }
-.feature-icon{
+/* .feature-icon{
     display: inline-block;
     width: 64px;
     height: 64px;
-}
+} */
 
  /* Section Images */
 
@@ -554,10 +554,12 @@ margin-bottom: 72px;
  .team {
     background-color: #F4F4FD;
 }
-
+.team section .container{
+    flex-direction: column;
+}
 .our-team-title{
 font-size: 36px;
-line-height: 1.1;
+line-height: 1.11;
 text-align: center;
 text-transform: capitalize;
 letter-spacing: 0.02em;
@@ -567,13 +569,12 @@ margin-bottom: 72px;
   .team-item{
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    width: 264px;
+    
     text-align: center;
     margin-right: var(--card-gap);
   }
-  .team-list{
-    display: flex;
-    flex-wrap: wrap;
+  .team-list .team-item{
+    width: 264px;
     list-style: none;
 }
 
@@ -582,18 +583,18 @@ margin-bottom: 72px;
 }
 
 .person-card-content{
-    padding: 32px 16px;
+    text-align: center;
+    padding: 32px 16px 36px;
 }
 
 .person-name-heading{
-    font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 8px;
 }
 
 .person-description{
-    font-weight: 400;
+    margin-bottom: 12px;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -1091,7 +1092,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 .mobile-menu .nav-item:last-child .link {
     color: #404bbf;
 }
-
+.contacts-link:hover,
+.contacts-link:focus {
+color: var(--accent-color);
+}  
 .contacts-social-media{
     margin-top: auto;
 }
@@ -1156,7 +1160,14 @@ max-width: 392px;
 padding: 24px 16px;
 }
 /* -------------Section Feature-mobile--------------	 */
-	
+.feature-list.title	{
+    text-align: center;
+}
+.feature-list.item:not(:last-child){
+    margin-bottom: 72px;
+}
+
+
 }
 /* Footer
 © 2022 GitHub, Inc.
