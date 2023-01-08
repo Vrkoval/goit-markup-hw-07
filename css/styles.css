@@ -1022,6 +1022,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 		padding-top: 24px;
 		padding-bottom: 24px;
 	}
+
+.menu.button{
+    background-color: transparent;
+    line-height: 0;
+    padding: 0;
+    border: none;
 }
 .mobile-menu {
     position: fixed;
@@ -1033,8 +1039,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     visibility: hidden;
     pointer-events: auto;
     background-color: var(--primary-white-color);
-	width: 100vw;
-	height: 100vw;
+	/* width: 100vw;
+	height: 100vw; */
     
 }  
 .mobile-menu.is-open{
@@ -1052,7 +1058,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     margin: auto;
     height: 100%;
     background-color: var(--primary-white-color);
-    padding: 40px;
+    width: 100vw;
+	height: 100vw;
 }
 .mobile-menu .modal-close-button {
 	top: 40px;
@@ -1078,7 +1085,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     color: var(--title-text-color);
 }
 
-.mobile-menu .site-nav .item:not(:last-child) {
+.mobile-menu .nav-item:not(:last-child) {
     margin-bottom: 40px;
 }
 
@@ -1153,7 +1160,7 @@ padding: 24px 16px;
 }
 	
 	
-
+}
 /* Footer
 © 2022 GitHub, Inc.
 Footer navigation
