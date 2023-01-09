@@ -76,7 +76,7 @@ body{
         margin: auto;
         }
 
-/* @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
     .container{
     width: 480px;
     }
@@ -90,7 +90,7 @@ body{
     .container {
     width: 1200px;
     }
-} */
+}
 
 
 /*------- MODAL -----*/
@@ -1211,6 +1211,7 @@ padding: 24px 16px;
 @media screen and (max-width: 1200px) {
  .img-section {
 display: none;
+ }
 .container {
 padding-left: 16px;
 padding-right: 16px;
@@ -1354,7 +1355,7 @@ padding-right: 16px;
         margin-right: auto;
     }
     .site-nav .nav-item:not(:last-child) {
-        margin-right: 40x;
+        margin-right: 40px;
     }
     .nav-link {
         display: block;
