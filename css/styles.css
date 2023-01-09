@@ -1467,10 +1467,86 @@ padding-right: 16px;
     url(../images/hero.jpg);
     background-size: 1440px 600px;
    }
-   
+   @media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx)   {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  
+    url(../images/hero_2x.jpg);
 
 }
 
+}
+.hero-title {
+    margin-bottom: 48px;
+    width: 494px;
+}
+.modal {
+    top:80px;
+    transform: translateX(-50%);
+}
+.feature-list .list-title {
+    font-size: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.section-feature {
+    padding-top: 120x;
+    padding-bottom: 120px;
+}
+.feature-list .item {
+    width: 264px;
+}
+.feature-list.item:not(:last-child) {
+    margin-right: 24px;
+}
+.img-section {
+    padding-bottom: 120px;
+}
+.work-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.work-list {
+    display: flex;
+    flex-basis: calc((100% - 48px) / 3);
+}
+.work-list>.item:not(:last-child) {
+    margin-right: 24px;
+}
+.team section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-list {
+    display: flex;
+    flex-basis: calc((100%-72px) / 4);
+}
+.team-list>.team-item:not(:last-child) {
+    margin-right: 24px;
+}
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-customers {
+    padding: 120px 0;
+}
+.customers-item:not(:last-child) {
+    margin-right: 24px;
+}
+.footer-desk-block {
+    margin-right: 120px;
+}
+.footer-social-media-block {
+    margin-right: auto;
+}
+
+}
 
 /* Footer
 © 2022 GitHub, Inc.
