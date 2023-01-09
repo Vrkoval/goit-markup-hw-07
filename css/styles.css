@@ -1207,8 +1207,60 @@ padding: 24px 16px;
 }
 
 }
+/* ===========MOBILE============ */
+/* ================MOBILE-TABLET =============*/
+@media screen and (max-width: 1200px) {
+ .img-section {
+display: none;
+.container {
+padding-left: 16px;
+padding-right: 16px;
+}
+.hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+.modal {
+    top: 96px;
+    transform: translateX(-50%);
+}
+.form-modal-title {
+    margin-bottom: 16px;
+}
+.feature-icon-bg {
+    display: none;
+}
+.feature-list .list-title {
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2E2F42;
+}
+.section-feature {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.feature-list .description {
+    font-weight: 500;
+}
+.section-customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.footer .container {
+    flex-wrap: wrap;
+}
+
+}
 
 
+
+
+}
+@media screen and (min-width: 767px) and (max-width: 1200px)
 /* Footer
 © 2022 GitHub, Inc.
 Footer navigation
