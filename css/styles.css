@@ -703,8 +703,6 @@ letter-spacing: 0.03em;
 footer {
     background-color: var(--primary-text-color); 
 color: var( --title-text-color);
-padding: 100px 0;
-height: 310px;
 align-items: baseline;
  
 }
@@ -722,6 +720,8 @@ align-items: baseline;
     letter-spacing: 0.03em;
     color: var(--secondary-bg-color);
     display: block;
+    margin: 0;
+    padding: 0;
     margin-bottom: 16px;
 }
 .footer-logo  {
@@ -762,10 +762,8 @@ text-decoration: none;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.5;
-        margin-bottom: 16px;
+        width: 208px;
         color: #F4F4FD;
-        margin-left: 120px;
-        
     }
     
     .footer-desc-block{
@@ -784,8 +782,6 @@ text-decoration: none;
         justify-content: center;
         align-items: center;
         gap: 16px;
-        /* margin-top: 12px; */
-        margin-left: 120px;
         align-items: baseline;
     }
     
@@ -1173,7 +1169,7 @@ padding: 24px 16px;
 
 
 .team-list .team-item {
-    margin: 0 auto;
+    margin: auto;
 }
 
 .team-list .team-item:not(:last-child) {
@@ -1197,20 +1193,22 @@ padding: 24px 16px;
     text-align: center;
 }
 
-.email-input-footer {
+.subscribe-mail {
     width: 100%;
     margin-bottom: 16px;
 }
 
-.footer-summary {
+.footer-desk-block {
     margin-bottom: 72px;
 }
 
-.footer-social {
+.footer-social-media-block {
     margin-bottom: 72px;
 }
 
 }
+
+
 /* Footer
 © 2022 GitHub, Inc.
 Footer navigation
