@@ -485,7 +485,7 @@ margin-bottom: 8px;
 
  .feature-list {
     list-style: none;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     margin-left:calc(-1*var(--card-gap));
@@ -498,9 +498,9 @@ margin-bottom: 8px;
 
     }
 
- .feature-list>.item {
+ .feature-list >.item {
     /* flex-basis: calc(100%/4 - var(--card-gap)); */
-   margin-left:var(--card-gap);
+  
    background-size:  64px 64px;
    }
     .description {
@@ -526,30 +526,15 @@ margin-bottom: 8px;
 
  /* Section Images */
 
-/* .img-section {
-    padding-bottom: 120px;
-}  */
+
  .work-title {
     margin: 0 auto;
 font-size: 36px;
 line-height: 1.1;
 text-transform: capitalize;
 color: var(--title-text-color);
-margin-bottom: 72px;
 } 
- .work-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none ;
-   } 
  
-
- .work-list >.item {
-       width: 360px;
-    margin-left:  var(--card-gap);
-    flex-basis:calc(100% / 3 - var(--card-gap ));
-}  
-
  .team {
     background-color: #F4F4FD;
 }
@@ -702,12 +687,12 @@ letter-spacing: 0.03em;
 footer {
     background-color: var(--primary-text-color); 
 color: var( --title-text-color);
-align-items: baseline;
+/* align-items: baseline; */
  
 }
 .footer-desk-block{
    align-items: baseline;
-    width: 264px;
+    max-width: 264px;
 }
 
 .footer-logo{
@@ -752,7 +737,7 @@ text-decoration: none;
 
 }
 
-.logorweb:hover,.footer-logo:hover, .logoname:focus, .footer-logo:focus {
+.logorweb:hover, .footer-logo:hover, .logoname:focus, .footer-logo:focus {
     color: var(--link-color);
     }
     .footer-social-media-title{
@@ -778,10 +763,10 @@ text-decoration: none;
     .footer-social-media-list {
         list-style: none;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         gap: 16px;
-        align-items: baseline;
+        /* align-items: baseline; */
     }
     
     .footer-social-media-link {
@@ -826,7 +811,7 @@ text-decoration: none;
 }
 .subscribe-mail{
     padding: 8px 16px;
-    width: 264px;
+    /* width: 264px; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -843,8 +828,8 @@ text-decoration: none;
 .subscribe-button{
     display: inline-flex;
     align-items: center;
-    padding: 8px 24px;
-    margin-left: 24px;
+    /* padding: 8px 24px;
+    margin-left: 24px; */
     cursor: pointer;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -1156,13 +1141,13 @@ max-width: 392px;
 padding: 24px 16px;
 }
 /* -------------Section Feature-mobile--------------	 */
-.feature-list.title	{
+.feature-list .title	{
     text-align: center;
 }
-.feature-list.item:not(:last-child){
+.feature-list .item:not(:last-child){
     margin-bottom: 72px;
 }
-.team section.team-list {
+.team section .team-list {
     padding-bottom: 128px;
 }
 
@@ -1259,7 +1244,7 @@ padding-right: 16px;
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 .container {
-    max-width: 768PX;
+    max-width: 768px;
 }
 .contacts-link {
     display: block;
@@ -1466,7 +1451,8 @@ padding-right: 16px;
     margin: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  
     url(../images/hero.jpg);
-    background-size: 1440px 600px;
+    background-size: cover;
+    /* background-size: 1440px 600px; */
    }
    @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
@@ -1516,7 +1502,7 @@ padding-right: 16px;
     display: flex;
     flex-basis: calc((100% - 48px) / 3);
 }
-.work-list>.item:not(:last-child) {
+.work-list >.item:not(:last-child) {
     margin-right: 24px;
 }
 .team section {
@@ -1525,20 +1511,24 @@ padding-right: 16px;
 }
 .team-list {
     display: flex;
-    flex-basis: calc((100%-72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
 }
-.team-list>.team-item:not(:last-child) {
+.team-list> .team-item:not(:last-child) {
     margin-right: 24px;
 }
 .footer {
+    display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .section-customers {
     padding: 120px 0;
 }
-.customers-item:not(:last-child) {
+/* .customers-item:not(:last-child) {
     margin-right: 24px;
+} */
+.customers-item {
+    flex-basis: calc((100%-96px) / 6);
 }
 .footer-desk-block {
     margin-right: 120px;
