@@ -142,9 +142,29 @@
             <div class="container">
             <h2 class="work-title"> What are we doing </h2>
         <ul class="work-list">
-            <li class="item"><img src="./images/comp.jpg" width="360" alt="В комп’ютері"></li>
-            <li class="item"><img src="./images/phone.jpg" width="360" alt="В телефоні"></li>
-            <li class="item"><img src="./images/img.jpg" width="360" alt="На різних пристроях"></li>
+            <li class="item">
+              <img 
+                  srcset="
+                    ./images/comp.jpg 1x,
+                    ./images/comp_2x.jpg 2x
+                      "
+              src="./images/comp.jpg" width="360" alt="В комп’ютері"/>
+            </li>
+            <li class="item">
+              <img
+              srcset="
+              ./images/phone.jpg 1x,
+              ./images/phone_2x.jpg 2x
+                "
+               src="./images/phone.jpg" width="360" alt="В телефоні"/>
+              </li>
+            <li class="item">
+              <img 
+              srcset="
+              ./images/img.jpg 1x,
+              ./images/img_2x.jpg 2x
+                "
+              src="./images/img.jpg" width="360" alt="На різних пристроях"></li>
         </ul>
             </div>
         </section >  
