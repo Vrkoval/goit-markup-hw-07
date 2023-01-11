@@ -534,12 +534,16 @@ line-height: 1.1;
 text-transform: capitalize;
 color: var(--title-text-color);
 } 
- 
+ .section .team {
+    padding-top: 96px;
+    padding-bottom: 106px;
+ }
  .team {
     background-color: #F4F4FD;
 }
 .team section .container{
     flex-direction: column;
+    padding-top: 96px;
 }
 .our-team-title{
 font-size: 36px;
