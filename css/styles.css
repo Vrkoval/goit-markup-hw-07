@@ -488,7 +488,7 @@ margin-bottom: 8px;
     /* display: flex; */
     justify-content: space-between;
     align-items: center;
-    margin-left:calc(-1*var(--card-gap));
+   
 } 
 .list-title {
     margin-bottom: 8px;
@@ -633,7 +633,10 @@ margin-bottom: 72px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 16px;
+    row-gap: 72px;
 }
+
 
 .customers-item {
     width: 168px;
@@ -1528,7 +1531,8 @@ padding-right: 16px;
     margin-right: 24px;
 } */
 .customers-item {
-    flex-basis: calc((100%-96px) / 6);
+    column-gap: 16px;
+    row-gap: 72px;
 }
 .footer-desk-block {
     margin-right: 120px;
