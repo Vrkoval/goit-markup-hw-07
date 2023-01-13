@@ -635,9 +635,11 @@ margin-bottom: 72px;
 }
 
 .customers-icon{
-        pointer-events: none;
+    pointer-events: none;
     fill: currentColor;
-    width:100
+    width: 104px;
+    height: 56px;
+    
 }
 
 
