@@ -383,7 +383,9 @@ line-height: 1.5;
 letter-spacing: 0.2em;
 padding: 24px 0;
 }
-
+.contacts-group{
+    margin-top: auto;
+}
 .contacts-list{
 display: flex;
 margin-left: auto;
@@ -909,8 +911,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     flex-wrap: wrap;
     
 }
-  
-     
+
   .button-filter {
     background-color: var(--sibtitle-bg-color);
     border: 1px solid var(--sibtitle-bg-color);
@@ -970,7 +971,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 	.container {
 		max-width: 428px;
 	}
-
+.main-navigation {
+    margin-top: auto;
+    display: flex;
+}
 	.header .container {
 		justify-content: space-between;
 		padding-top: 24px;
