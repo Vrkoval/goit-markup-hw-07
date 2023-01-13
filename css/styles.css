@@ -109,7 +109,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     min-width: 392px;
-    min-height: 566px;
+    min-height: 579px;
     background-color: #FFFFFF;
     border-radius: 4px;
    
@@ -177,12 +177,12 @@ body{
 
 .form-input{
     margin: 0;
-    padding: 8px 38px;
+    padding: 8px 24px;
     width: 100%;
     height: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    height: 40px;
+    height: 38px;
 
     padding-left: 34px;
     transition-property: border-color color;
