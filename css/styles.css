@@ -385,11 +385,11 @@ letter-spacing: 0.2em;
 padding: 24px 0;
 }
 
-.contacts-list{
+/* .contacts-list{
 /* display: flex; */
 margin-left: auto;
-} 
-.contacts-list:not(:last-child) { margin-left: 40px;}
+}  */
+
 
 .contacts-link{
 color: var(--title-text-color);
@@ -997,9 +997,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     visibility: hidden;
     pointer-events: auto;
     background-color: var(--primary-white-color);
-	width: 100vw;
+	/* width: 100vw;
 	height: 100vw;
-    
+     */
 }  
 .mobile-menu.is-open{
     opacity: 1;
@@ -1010,11 +1010,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     display: flex;
     flex-direction: column;
     position: relative;
-    /* max-width: 428px;
-    max-height: 796px; */
-    padding: 40px;
+    
+    padding-left: 40px;
     margin: auto;
-    height: 100%;
+    /* height: 100%; */
     background-color: var(--primary-white-color);
     width: 100vw;
 	height: 100vw;
@@ -1027,7 +1026,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 .mobile-menu .site-nav {
     display: block;
     margin-top: 40px;
-    margin-bottom: auto;
 }
 
 .mobile-menu .contacts {
@@ -1180,7 +1178,7 @@ display: none;
  .contacts-list {
     display: flex;
     flex-direction: column;
-
+padding-left: 48px;
 }
 .container {
 padding-left: 16px;
@@ -1242,8 +1240,13 @@ padding-right: 16px;
 .container {
     max-width: 768px;
 }
+/* .contacts{padding-left: 110px} */
 
-/* .contacts-list{flex-direction: column;} */
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0 auto;
+}
 .contacts-link {
     display: inline-block;
     font-size: 12px;
@@ -1253,7 +1256,7 @@ padding-right: 16px;
 .contacts-list:first-child {
     padding-top: 24px;
     margin-bottom: 4px;
-    margin-left: ;
+    
 }
 .contacts-list:last-child {
     padding-bottom: 10px;
@@ -1330,6 +1333,11 @@ padding-right: 16px;
     .mobile-menu-container {
         display: flex;
         justify-content: space-between;
+    }
+    .contacts{
+        display: flex;
+        
+        
     }
     .header .logo {
         color: #2E2F42;
