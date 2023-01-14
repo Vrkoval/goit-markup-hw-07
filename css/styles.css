@@ -349,22 +349,6 @@ text-decoration: none;
     flex-direction: row;
 }
 /*-- Головна навігація-- */
-.nav-link {
-position: relative;
-transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-padding: 24px 0 24px 0;
-color: var(--primary-text-color);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-decoration: none;
-}
-.nav-link:hover,.nav-link:focus {color: var(--link-color)} 
-
-
 
 .site-nav .list {
     list-style: none;
@@ -384,11 +368,6 @@ line-height: 1.5;
 letter-spacing: 0.2em;
 padding: 24px 0;
 }
-
-/* .contacts-list{
-/* display: flex; */
-margin-left: auto;
-}  */
 
 
 .contacts-link{
@@ -620,11 +599,7 @@ margin-bottom: 72px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     outline: none;
-    transition-property: color, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -970,11 +945,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 	.container {
 		max-width: 428px;
 	}
-.contacts-group{
+/* .contacts-group{
     display: flex;
     flex-direction: column;
-    margin-bottom: auto;
-}
+    margin-top: auto;
+} */
 	.header .container {
 		justify-content: space-between;
 		padding-top: 24px;
@@ -1012,7 +987,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     position: relative;
         padding-left: 40px;
     margin: auto;
-    /* height: 100%; */
     background-color: var(--primary-white-color);
     width: 100vw;
 	height: 100vw;
