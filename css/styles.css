@@ -579,8 +579,7 @@ margin-bottom: 72px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* column-gap: 16px;
-    row-gap: 72px; */
+    
 }
 
 
@@ -945,11 +944,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 	.container {
 		max-width: 428px;
 	}
-/* .contacts-group{
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-} */
+
 	.header .container {
 		justify-content: space-between;
 		padding-top: 24px;
@@ -1023,13 +1018,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     color: #404bbf;
     
 }
-/* .contacts-link:hover,
-.contacts-link:focus {
-color: var(--accent-color);
-}   */
-.contacts-social-media{
-    margin-top: auto;
-}
+
 .mobile-menu .contacts-link {
     display: flex;
     font-size: 36px;
